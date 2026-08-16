@@ -593,100 +593,7 @@ button {
 }
 
 
-/* =========================================================
-   NETWORK BACKGROUND
-   ========================================================= */
 
-.network {
-  position: absolute;
-
-  inset: 0;
-
-  overflow: hidden;
-
-  opacity: 0.8;
-
-  pointer-events: none;
-
-  background:
-    radial-gradient(
-      circle at var(--px) var(--py),
-      rgba(255, 90, 31, 0.08),
-      transparent 28%
-    );
-}
-
-.network__wash {
-  position: absolute;
-
-  inset: 0;
-
-  background:
-    linear-gradient(
-      90deg,
-      transparent 0%,
-      rgba(255, 90, 31, 0.018) 50%,
-      transparent 100%
-    );
-}
-
-.network svg {
-  position: absolute;
-
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-}
-
-.network line {
-  stroke: rgba(245, 245, 240, 0.12);
-  stroke-width: 0.08;
-}
-
-.node {
-  position: absolute;
-
-  width: 4px;
-  height: 4px;
-
-  border-radius: 50%;
-
-  transform: translate(-50%, -50%);
-
-  background: #777;
-
-  box-shadow:
-    0 0 0 3px rgba(255, 255, 255, 0.03);
-
-  animation: pulse 3s ease-in-out infinite;
-}
-
-.node--signal {
-  background: var(--signal);
-
-  box-shadow:
-    0 0 14px rgba(255, 90, 31, 0.6);
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 0.45;
-
-    transform:
-      translate(-50%, -50%)
-      scale(0.8);
-  }
-
-  50% {
-    opacity: 1;
-
-    transform:
-      translate(-50%, -50%)
-      scale(1.25);
-  }
-}
 
 /* =========================================================
    PROJECTS
@@ -1170,7 +1077,7 @@ button {
 
   .statement h2,
   .section-heading h2,
-  .network-copy h2,
+  .netk-copy h2,
   .process h2,
   .about h2 {
     font-size: clamp(55px, 13vw, 100px);
@@ -1452,10 +1359,6 @@ button {
    HERO LAYERING
    ========================================================= */
 
-/* Safety: never allow the old polygon network inside hero */
-.hero > .network {
-  display: none !important;
-}
 
 .hero__meta {
   position: absolute !important;
