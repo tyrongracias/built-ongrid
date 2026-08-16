@@ -590,11 +590,10 @@ export default function Home() {
           </h2>
 
           <p>
-            Your brand affects your website.
-            Your website affects search.
-            Social affects trust.
-            Systems affect speed.
-            Data tells you what works.
+            Your brand shapes how people see you.
+            Your website gives them somewhere to go.
+            Your visibility helps the right people find you.
+            And your social keeps them engaged.
           </p>
 
           <p>
@@ -609,7 +608,6 @@ export default function Home() {
             <span>WEB//</span>
             <span>SEARCH//</span>
             <span>SOCIAL//</span>
-            <span>AI//</span>
             <span>DATA//</span>
 
           </div>
