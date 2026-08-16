@@ -423,7 +423,7 @@ export default function Home() {
           <div className="hero__bottom">
 
             <p>
-              We build the digital presence modern businesses
+              At 'BUILT// ONGRID', we build the digital presence modern businesses
               need to get seen, trusted and connected.
             </p>
 
