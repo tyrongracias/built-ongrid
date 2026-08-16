@@ -729,17 +729,16 @@ export default function Home() {
         <div className="section-heading">
 
           <h2>
-            NO
-            <br />
+            BUILT//
+              <br />
 
             <em>
-              BLACK BOX.
+            ONGRID PROCESS.
             </em>
           </h2>
 
           <p>
-            You know what we're doing, why we're
-            doing it and what happens next.
+            From the first conversation to the final launch, here's how we build.
           </p>
 
         </div>
