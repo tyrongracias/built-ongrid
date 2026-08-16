@@ -118,8 +118,14 @@ button {
   line-height: 0.9;
   white-space: nowrap;
 
-  -webkit-text-stroke: 0.35px currentColor;
+  color: var(--white);
+
+  -webkit-text-stroke: 0.35px var(--lime);
   paint-order: stroke fill;
+}
+
+.brand__line + .brand__line {
+  -webkit-text-stroke: 0.45px var(--lime);
 }
 
 .brand__slashes {
