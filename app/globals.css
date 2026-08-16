@@ -9,7 +9,7 @@
   --ink: #111111;
   --white: #f5f5f0;
   --paper: #f2f1eb;
-  --lime: #c8ff00;
+  --signal: #FF5A1F;
   --grid: #1a1a1a;
   --muted: #6b6b6b;
 
@@ -149,10 +149,10 @@ button {
   font-family: var(--logo);
   font-weight: 400;
 
-  color: var(--lime) !important;
+  color: var(--signal) !important;
 
-  -webkit-text-fill-color: var(--lime);
-  -webkit-text-stroke: 0.15px var(--lime);
+  -webkit-text-fill-color: var(--signal);
+  -webkit-text-stroke: 0.15px var(--signal);
 
   letter-spacing: -0.04em;
 }
@@ -179,10 +179,10 @@ button {
 
 /* Footer // remains lime */
 .footer-brand .brand__slashes {
-  color: var(--lime) !important;
+  color: var(--signal) !important;
 
-  -webkit-text-fill-color: var(--lime);
-  -webkit-text-stroke: 0.15px var(--lime);
+  -webkit-text-fill-color: var(--signal);
+  -webkit-text-stroke: 0.15px var(--signal);
 }
 /* =========================================================
    NAVIGATION LINKS
@@ -205,7 +205,7 @@ button {
 
 .navlinks a:hover {
   opacity: 1;
-  color: var(--lime);
+  color: var(--signal);
 }
 
 .nav-cta {
@@ -272,7 +272,7 @@ button {
 }
 
 .eyebrow {
-  color: var(--lime);
+  color: var(--signal);
   margin-bottom: 28px;
 }
 
@@ -299,7 +299,7 @@ button {
 .about em,
 .start h2 em {
   font-style: normal;
-  color: var(--lime);
+  color: var(--signal);
 }
 
 .hero__bottom {
@@ -345,8 +345,8 @@ button {
 }
 
 .button:hover {
-  background: var(--lime);
-  border-color: var(--lime);
+  background: var(--signal);
+  border-color: var(--signal);
 
   color: var(--black);
 
@@ -375,7 +375,7 @@ button {
 }
 
 .scroll-mark span {
-  color: var(--lime);
+  color: var(--signal);
   font-size: 17px;
 }
 
@@ -449,7 +449,7 @@ button {
 }
 
 .node--signal {
-  background: var(--lime);
+  background: var(--signal);
 
   box-shadow:
     0 0 14px rgba(200, 255, 0, 0.6);
@@ -561,7 +561,7 @@ button {
   width: 36px;
   height: 2px;
 
-  background: var(--lime);
+  background: var(--signal);
 }
 
 .section-heading {
@@ -668,7 +668,7 @@ button {
 .service:hover .service__arrow {
   opacity: 1;
 
-  color: var(--lime);
+  color: var(--signal);
 }
 
 /* =========================================================
@@ -731,9 +731,9 @@ button {
 }
 
 .network-words span:first-child {
-  border-color: var(--lime);
+  border-color: var(--signal);
 
-  color: var(--lime);
+  color: var(--signal);
 }
 
 .network-final {
@@ -756,7 +756,7 @@ button {
 }
 
 .network-final .arrow {
-  color: var(--lime);
+  color: var(--signal);
 }
 
 /* =========================================================
@@ -783,8 +783,8 @@ button {
   color: var(--white);
 }
 
-.project--lime .project__visual {
-  background: var(--lime);
+.project--signal .project__visual {
+  background: var(--signal);
 
   color: var(--black);
 }
@@ -810,7 +810,7 @@ button {
     9% 100%;
 }
 
-.project--lime .project__visual-grid {
+.project--signal .project__visual-grid {
   background-image:
     linear-gradient(
       rgba(8, 8, 8, 0.1) 1px,
@@ -1028,7 +1028,7 @@ button {
 .about__tags {
   margin-top: 55px;
 
-  color: var(--lime);
+  color: var(--signal);
 
   font-size: 9px;
 
@@ -1084,9 +1084,9 @@ button {
 }
 
 .button--light:hover {
-  background: var(--lime);
+  background: var(--signal);
 
-  border-color: var(--lime);
+  border-color: var(--signal);
 }
 
 .contact {
