@@ -304,23 +304,29 @@ button {
 
 .hero__bottom {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-  align-items: flex-end;
-  justify-content: space-between;
-
-  gap: 30px;
+  gap: 28px;
 
   margin-top: 45px;
 
-  max-width: 930px;
+  max-width: 360px;
 }
 
 .hero__bottom p {
   max-width: 360px;
 
+  margin: 0;
+
   color: #a5a5a5;
 
   font-size: 14px;
+  line-height: 1.5;
+}
+
+.hero__bottom .button {
+  align-self: flex-start;
 }
 
 .button {
