@@ -405,16 +405,16 @@ export default function Home() {
           <h1>
             WE BUILD
             <br />
-
-            <span>
-              BUSINESSES.
+          
+            <span className="hero-muted">
+              YOUR BUSINESS.
             </span>
-
+          
             <br />
-
-            WE PUT THEM
+          
+            WE PUT IT
             <br />
-
+          
             <em>
               ONGRID.
             </em>
