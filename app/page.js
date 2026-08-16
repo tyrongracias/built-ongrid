@@ -13,7 +13,7 @@ const services = [
   {
     id: '02',
     code: 'WEB//',
-    title: 'Where your business builds its foundational digital presence.',
+    title: 'Where your brand builds its foundational digital presence.',
     body: 'Fast, responsive websites and digital experiences designed to make people trust you — and take action.',
     tags: 'UX/UI / DEVELOPMENT / CMS / BUSINESS WEBSITES'
   },
@@ -27,7 +27,7 @@ const services = [
   {
     id: '04',
     code: 'SOCIAL//',
-    title: 'Where your business stays in sight.',
+    title: 'Where your brand stays in sight.',
     body: 'A practical visual and content system that keeps your business recognizable wherever people find it.',
     tags: 'CONTENT DIRECTION / SOCIAL / CREATIVE SYSTEMS'
   },
@@ -407,7 +407,7 @@ export default function Home() {
                 <br />
               
                 <span className="hero-muted">
-                  BETTER BUSINESSES.
+                  BETTER BRANDS.
                 </span>
               
                 <br />
@@ -438,7 +438,7 @@ export default function Home() {
         </div>
 
         <div className="scroll-mark">
-          SCROLL TO CONNECT <span>↓</span>
+          SCROLL TO SEE MORE <span>↓</span>
         </div>
 
       </section>
@@ -453,38 +453,27 @@ export default function Home() {
       >
 
         <div className="section-index">
-          01 / THE INTERNET CHANGED
+          01 / DISCOVERY
         </div>
 
         <div className="statement__grid">
 
           <h2>
-            YOUR
+            HOW STRONG IS
             <br />
-            CUSTOMERS
-            <br />
-            ARE ONLINE.
-            <br />
-            YOUR BUSINESS
-            <br />
-            SHOULD BE
-            <br />
-            TOO.
+            YOUR BRAND?
           </h2>
 
           <div className="statement__copy">
 
             <p>
-              Your customers are already online.
-              They're searching. Comparing. Scrolling.
-              Asking AI. Checking reviews. Looking at
-              your website.
+              Your next customers are already out there.
+              How does your brand show up when they find you?
             </p>
 
             <p>
               <strong>
-                Your business needs to be there —
-                and it needs to look like it belongs there.
+                Your brand needs to be out there - and it needs to feel like it belongs there.
               </strong>
             </p>
 
@@ -515,10 +504,10 @@ export default function Home() {
         <div className="section-heading">
 
           <h2>
-            YOUR BUSINESS,
+            THE BUILDING
             <br />
             <span>
-              BUILT ONLINE.
+              BLOCKS.
             </span>
           </h2>
           <p>
