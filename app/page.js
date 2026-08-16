@@ -836,55 +836,52 @@ export default function Home() {
           ===================================================== */}
 
       <section
-        className="about section-dark reveal"
-      >
+  className="about section-dark reveal"
+>
 
-        <div className="section-index">
-          07 / WHO WE ARE
-        </div>
+  <div className="section-index">
+    07 / WHO WE ARE
+  </div>
 
-        <div className="about__grid">
+  <div className="about__grid">
 
-          <h2>
-            SMALL STUDIO.
-            <br />
+    <h2>
+      SMALL STUDIO.
+      <br />
 
-            <em>
-              BIG DIGITAL ENERGY.
-            </em>
-          </h2>
+      <em>
+        BIG DIGITAL ENERGY.
+      </em>
+    </h2>
 
-          <div>
+    <div>
 
-            <p>
-              BUILT// ONGRID is an independent creative
-              digital studio building brands, websites
-              and connected digital experiences for
-              modern businesses.
-            </p>
+      <p>
+        BUILT// ONGRID is an independent creative studio
+        for businesses ready to build properly online.
+      </p>
 
-            <p>
-              We sit somewhere between design, technology
-              and business — because that's where the
-              interesting problems are.
-            </p>
+      <p>
+        We work across brand, web, search and social —
+        bringing the right pieces together to create
+        digital experiences that work and make sense.
+      </p>
 
-            <p>
-              <strong>
-                We work with businesses that want more
-                than a website. They want to be taken
-                seriously online.
-              </strong>
-            </p>
+      <p>
+        <strong>
+          A business built to be seen.
+        </strong>
+      </p>
 
-            <div className="about__tags">
-              INDEPENDENT / DESIGN-LED / TECHNOLOGY-DRIVEN
-            </div>
+      <div className="about__tags">
+        INDEPENDENT / DESIGN-LED / TECHNOLOGY-DRIVEN
+      </div>
 
-          </div>
+    </div>
 
-        </div>
-      </section>
+  </div>
+
+</section>
 
 
       {/* =====================================================
