@@ -403,21 +403,21 @@ export default function Home() {
           </p>
 
             <h1>
-              WE BUILD
-              <br />
-            
-              <span className="hero-muted">
-                YOUR BUSINESS.
-              </span>
-            
-              <br />
-            
-              AND PUT IT
-              <br />
-            
-              <em>
-                ONGRID.
-              </em>
+                WE BUILD
+                <br />
+              
+                <span className="hero-muted">
+                  BETTER BUSINESSES.
+                </span>
+              
+                <br />
+              
+                FOR A DIGITAL
+                <br />
+              
+                <em>
+                  WORLD.
+                </em>
             </h1>
 
           <div className="hero__bottom">
