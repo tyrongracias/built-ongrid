@@ -671,92 +671,99 @@ button {
   color: var(--signal);
 }
 
-/* =========================================================
-   NETWORK SECTION
+//* =========================================================
+   NETWORK BACKGROUND
    ========================================================= */
 
-.network-section {
-  position: relative;
-
-  min-height: 850px;
-
-  overflow: hidden;
-}
-
-.network-section > .network {
-  opacity: 0.9;
-}
-
-.network-copy {
-  position: relative;
-
-  z-index: 2;
-
-  max-width: 900px;
-}
-
-.network-copy p {
-  max-width: 410px;
-
-  margin: 35px 0 0 50%;
-
-  color: #999;
-
-  font-size: 14px;
-}
-
-.network-copy p strong {
-  color: var(--white);
-}
-
-.network-words {
-  margin-top: 80px;
-
-  display: flex;
-
-  flex-wrap: wrap;
-
-  gap: 10px;
-
-  max-width: 750px;
-}
-
-.network-words span {
-  border: 1px solid rgba(245, 245, 240, 0.18);
-
-  padding: 9px 12px;
-
-  font-size: 9px;
-  letter-spacing: 0.13em;
-}
-
-.network-words span:first-child {
-  border-color: var(--signal);
-
-  color: var(--signal);
-}
-
-.network-final {
+.network {
   position: absolute;
 
-  z-index: 2;
+  inset: 0;
 
-  bottom: 40px;
-  right: 4vw;
+  overflow: hidden;
 
-  font-size: 10px;
+  opacity: 0.8;
 
-  letter-spacing: 0.16em;
+  pointer-events: none;
 
-  display: flex;
-
-  gap: 15px;
-
-  align-items: center;
+  background:
+    radial-gradient(
+      circle at var(--px) var(--py),
+      rgba(255, 90, 31, 0.08),
+      transparent 28%
+    );
 }
 
-.network-final .arrow {
-  color: var(--signal);
+.network__wash {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 90, 31, 0.018) 50%,
+      transparent 100%
+    );
+}
+
+.network svg {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.network line {
+  stroke: rgba(245, 245, 240, 0.12);
+  stroke-width: 0.08;
+}
+
+.node {
+  position: absolute;
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background: #777;
+
+  box-shadow:
+    0 0 0 3px rgba(255, 255, 255, 0.03);
+
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.node--signal {
+  background: var(--signal);
+
+  box-shadow:
+    0 0 14px rgba(255, 90, 31, 0.6);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+
+    transform:
+      translate(-50%, -50%)
+      scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+
+    transform:
+      translate(-50%, -50%)
+      scale(1.25);
+  }
 }
 
 /* =========================================================
@@ -1410,4 +1417,109 @@ button {
     padding-left: 5vw;
     padding-right: 5vw;
   }
+}
+
+/* =========================================================
+   HERO GRID / MOUSE FIELD
+   ========================================================= */
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: auto;
+
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 72px 72px;
+}
+
+/* Soft orange glow following the mouse */
+.hero-grid__glow {
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  left: var(--mouse-x);
+  top: var(--mouse-y);
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 90, 31, 0.10) 0%,
+      rgba(255, 90, 31, 0.035) 28%,
+      rgba(255, 90, 31, 0) 70%
+    );
+
+  filter: blur(4px);
+}
+
+/* Bright orange mouse point */
+.hero-grid__cursor {
+  position: absolute;
+
+  width: 6px;
+  height: 6px;
+
+  left: var(--mouse-x);
+  top: var(--mouse-y);
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background: #FF5A1F;
+
+  box-shadow:
+    0 0 8px rgba(255, 90, 31, 0.9),
+    0 0 24px rgba(255, 90, 31, 0.55),
+    0 0 50px rgba(255, 90, 31, 0.25);
+
+  pointer-events: none;
+}
+
+/* Subtle grid intersection dots */
+.hero-grid::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background-image:
+    radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.16) 1px,
+      transparent 1px
+    );
+
+  background-size: 72px 72px;
+
+  opacity: 0.35;
+}
+
+/* Keep hero content above the grid */
+.hero__meta,
+.hero__content,
+.hero .scroll-mark {
+  position: relative;
+  z-index: 2;
 }
