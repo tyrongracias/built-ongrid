@@ -1600,10 +1600,11 @@ button {
    HERO CONTENT ABOVE GRID
    ========================================================= */
 
-.hero__meta,
-.hero__content,
-.hero .scroll-mark {
-  position: relative;
+/* Keep hero content above the grid */
 
+.hero__meta {
   z-index: 2;
 }
+
+.hero__content {
+  z
