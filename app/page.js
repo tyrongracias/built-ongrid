@@ -13,28 +13,28 @@ const services = [
   {
     id: '02',
     code: 'WEB//',
-    title: 'Where your brand builds its foundational digital presence.',
+    title: 'Give your brand its foundational digital presence.',
     body: 'Fast, responsive websites and digital experiences designed to make people trust you — and take action.',
     tags: 'UX/UI / DEVELOPMENT / CMS / BUSINESS WEBSITES'
   },
   {
     id: '03',
     code: 'SEO//',
-    title: 'Where your customers find you, when it matters.',
+    title: 'Help customers find you easily.',
     body: 'The foundations that help Google understand who you are, what you do and where you operate.',
     tags: 'LOCAL SEO / GOOGLE / CONTENT STRUCTURE / ANALYTICS'
   },
   {
     id: '04',
     code: 'SOCIAL//',
-    title: 'Where your brand stays in sight.',
+    title: 'Give your brand the limelight it deserves.',
     body: 'A practical visual and content system that keeps your business recognizable wherever people find it.',
     tags: 'CONTENT DIRECTION / SOCIAL / CREATIVE SYSTEMS'
   },
   {
     id: '05',
     code: 'LAUNCH//',
-    title: 'Bringing everything together.',
+    title: 'Bring it all together.',
     body: 'We connect the pieces, get your business live and guide you with a foundation you can build on.',
     tags: 'LAUNCH / ANALYTICS / HANDOVER / GROWTH'
   },
@@ -431,7 +431,7 @@ export default function Home() {
               className="button"
               href="#start"
             >
-              START A PROJECT <Arrow />
+              BUILD YOUR BRAND <Arrow />
             </a>
 
           </div>
