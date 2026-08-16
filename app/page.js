@@ -6,36 +6,36 @@ const services = [
   {
     id: '01',
     code: 'BRAND//',
-    title: 'Make the business look like a business.',
+    title: 'We make your business stand out.',
     body: 'Identity, visual direction and the design language that makes your business recognizable.',
     tags: 'IDENTITY / POSITIONING / ART DIRECTION'
   },
   {
     id: '02',
     code: 'WEB//',
-    title: 'Build the digital home.',
+    title: 'Where your business builds its foundational digital presence.',
     body: 'Fast, responsive websites and digital experiences designed to make people trust you — and take action.',
     tags: 'UX/UI / DEVELOPMENT / CMS / BUSINESS WEBSITES'
   },
   {
     id: '03',
-    code: 'SEARCH//',
-    title: 'Make the business discoverable.',
+    code: 'SEO//',
+    title: 'Where your customers find you, when it matters.',
     body: 'The foundations that help Google understand who you are, what you do and where you operate.',
     tags: 'LOCAL SEO / GOOGLE / CONTENT STRUCTURE / ANALYTICS'
   },
   {
     id: '04',
     code: 'SOCIAL//',
-    title: 'Give the brand a presence.',
+    title: 'Where your business stays in sight.',
     body: 'A practical visual and content system that keeps your business recognizable wherever people find it.',
     tags: 'CONTENT DIRECTION / SOCIAL / CREATIVE SYSTEMS'
   },
   {
     id: '05',
     code: 'LAUNCH//',
-    title: 'Connect everything and ship it.',
-    body: 'We bring the pieces together, get the business live and leave you with a foundation you can grow.',
+    title: 'Bringing everything together.',
+    body: 'We connect the pieces, get your business live and guide you with a foundation you can build on.',
     tags: 'LAUNCH / ANALYTICS / HANDOVER / GROWTH'
   },
 ];
@@ -46,7 +46,7 @@ const projects = [
     title: 'DIVVYUP & GROW',
     type: 'PROPTECH / PRODUCT / WEB',
     note: 'A premium digital investment experience for fractional property ownership.',
-    accent: 'lime'
+    accent: 'signal'
   },
   {
     no: '002',
@@ -459,13 +459,17 @@ export default function Home() {
         <div className="statement__grid">
 
           <h2>
-            HAVING A
+            YOUR
             <br />
-            BUSINESS
+            CUSTOMERS
             <br />
-            ISN'T ENOUGH
+            ARE ONLINE.
             <br />
-            ANYMORE.
+            YOUR BUSINESS
+            <br />
+            SHOULD BE
+            <br />
+            TOO.
           </h2>
 
           <div className="statement__copy">
@@ -511,17 +515,15 @@ export default function Home() {
         <div className="section-heading">
 
           <h2>
-            FROM BUSINESS
+            YOUR BUSINESS,
             <br />
-
             <span>
-              TO DIGITAL BUSINESS.
+              BUILT ONLINE.
             </span>
           </h2>
-
           <p>
-            One studio. The pieces your business
-            needs to get connected.
+            Everything your business needs to build
+            a strong digital presence.
           </p>
 
         </div>
