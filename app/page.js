@@ -911,21 +911,18 @@ export default function Home() {
           </p>
 
           <a
-  className="button button--light"
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=builtongrid@gmail.com&su=START%2F%2F%20Project%20Enquiry"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  START A PROJECT <Arrow />
-</a>
+            className="button button--light"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=builtongrid@gmail.com&su=START%2F%2F%20Project%20Enquiry"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          START A PROJECT <Arrow />
+          </a>
 
           <div className="contact">
             +91 8766071665
             <br />
-
-            <span>
               builtongrid@gmail.com
-            </span>
           </div>
 
         </div>
