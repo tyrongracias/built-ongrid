@@ -122,11 +122,6 @@ button {
   paint-order: stroke fill;
 }
 
-.brand__line + .brand__line {
-  transform: scaleX(0.98);
-  transform-origin: left center;
-}
-
 .brand__slashes {
   display: inline-block;
   margin-left: 4px;
