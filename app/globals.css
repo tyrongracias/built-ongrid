@@ -122,19 +122,25 @@ button {
 
   white-space: nowrap;
 
+  /* BUILT and ONGRID are white */
   color: var(--white);
 
-  /* Subtle lime edge */
-  -webkit-text-stroke: 0.35px var(--lime);
-  paint-order: stroke fill;
+  /*
+   * Very subtle white optical weight.
+   * This makes the letters feel heavier without
+   * changing their dimensions.
+   */
+  -webkit-text-stroke: 0.15px var(--white);
 }
 
-/* Optical weight correction for ONGRID */
+/* ONGRID optical weight correction */
 .brand__line + .brand__line {
-  -webkit-text-stroke: 0.45px var(--lime);
+  color: var(--white);
+
+  -webkit-text-stroke: 0.35px var(--white);
 }
 
-/* The // mark */
+/* The // is the ONLY lime part */
 .brand__slashes {
   display: inline-block;
 
@@ -143,32 +149,40 @@ button {
   font-family: var(--logo);
   font-weight: 400;
 
-  color: var(--lime);
+  color: var(--lime) !important;
 
-  /* Same visual weight as the logo lettering */
-  -webkit-text-stroke: 0.35px var(--lime);
+  -webkit-text-fill-color: var(--lime);
+  -webkit-text-stroke: 0.15px var(--lime);
 
   letter-spacing: -0.04em;
 }
 
-/* Footer logo */
+/* =========================================================
+   FOOTER LOGO
+   ========================================================= */
+
 .footer-brand .brand__line {
   font-size: 27px;
 
+  /* Footer is on the light background */
   color: var(--black);
 
-  -webkit-text-stroke: 0.35px var(--lime);
+  -webkit-text-stroke: 0.15px var(--black);
 }
 
 /* Footer ONGRID optical weight */
 .footer-brand .brand__line + .brand__line {
-  -webkit-text-stroke: 0.45px var(--lime);
+  color: var(--black);
+
+  -webkit-text-stroke: 0.35px var(--black);
 }
 
+/* Footer // remains lime */
 .footer-brand .brand__slashes {
-  color: var(--lime);
+  color: var(--lime) !important;
 
-  -webkit-text-stroke: 0.35px var(--lime);
+  -webkit-text-fill-color: var(--lime);
+  -webkit-text-stroke: 0.15px var(--lime);
 }
 /* =========================================================
    NAVIGATION LINKS
