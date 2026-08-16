@@ -893,10 +893,6 @@ export default function Home() {
         className="start reveal"
       >
 
-        <div className="start__network">
-          <Network active />
-        </div>
-
         <div className="section-index">
           08 / START SOMETHING
         </div>
@@ -915,11 +911,13 @@ export default function Home() {
           </p>
 
           <a
-            className="button button--light"
-            href="mailto:builtongrid@gmail.com?subject=START//%20Project%20Enquiry"
-          >
-            START A PROJECT <Arrow />
-          </a>
+  className="button button--light"
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=builtongrid@gmail.com&su=START%2F%2F%20Project%20Enquiry"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  START A PROJECT <Arrow />
+</a>
 
           <div className="contact">
             +91 8766071665
