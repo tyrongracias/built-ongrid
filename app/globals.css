@@ -109,39 +109,66 @@ button {
   color: var(--black);
 }
 
+/* Main logo text */
 .brand__line {
   display: block;
+
   font-family: var(--logo);
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 400;
+
   letter-spacing: 0;
-  line-height: 0.9;
+  line-height: 0.88;
+
   white-space: nowrap;
 
   color: var(--white);
 
+  /* Subtle lime edge */
   -webkit-text-stroke: 0.35px var(--lime);
   paint-order: stroke fill;
 }
 
+/* Optical weight correction for ONGRID */
 .brand__line + .brand__line {
   -webkit-text-stroke: 0.45px var(--lime);
 }
 
+/* The // mark */
 .brand__slashes {
   display: inline-block;
+
   margin-left: 4px;
+
+  font-family: var(--logo);
+  font-weight: 400;
+
   color: var(--lime);
+
+  /* Same visual weight as the logo lettering */
+  -webkit-text-stroke: 0.35px var(--lime);
+
   letter-spacing: -0.04em;
 }
 
+/* Footer logo */
 .footer-brand .brand__line {
   font-size: 27px;
-  -webkit-text-stroke: 0.35px currentColor;
+
+  color: var(--black);
+
+  -webkit-text-stroke: 0.35px var(--lime);
+}
+
+/* Footer ONGRID optical weight */
+.footer-brand .brand__line + .brand__line {
+  -webkit-text-stroke: 0.45px var(--lime);
 }
 
 .footer-brand .brand__slashes {
   color: var(--lime);
+
+  -webkit-text-stroke: 0.35px var(--lime);
 }
 /* =========================================================
    NAVIGATION LINKS
