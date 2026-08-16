@@ -397,7 +397,7 @@ button {
   background:
     radial-gradient(
       circle at var(--px) var(--py),
-      rgba(200, 255, 0, 0.08),
+      rgba(255, 90, 31, 0.08),
       transparent 28%
     );
 }
@@ -411,7 +411,7 @@ button {
     linear-gradient(
       90deg,
       transparent 0%,
-      rgba(200, 255, 0, 0.018) 50%,
+      rgba(255, 90, 31, 0.018) 50%,
       transparent 100%
     );
 }
@@ -452,7 +452,7 @@ button {
   background: var(--signal);
 
   box-shadow:
-    0 0 14px rgba(200, 255, 0, 0.6);
+    0 0 14px rgba(255, 90, 31, 0.6);
 }
 
 @keyframes pulse {
@@ -1425,16 +1425,12 @@ button {
 
 .hero-grid {
   position: absolute;
-
   inset: 0;
-
   overflow: hidden;
-
   z-index: 0;
-
   pointer-events: none;
 
-  background:
+  background-image:
     linear-gradient(
       rgba(255, 255, 255, 0.025) 1px,
       transparent 1px
@@ -1448,6 +1444,73 @@ button {
   background-size: 72px 72px;
 }
 
+.hero-grid__glow {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+
+  left: var(--mouse-x);
+  top: var(--mouse-y);
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 90, 31, 0.11) 0%,
+    rgba(255, 90, 31, 0.045) 25%,
+    rgba(255, 90, 31, 0) 70%
+  );
+
+  filter: blur(5px);
+}
+
+.hero-grid__cursor {
+  position: absolute;
+
+  width: 6px;
+  height: 6px;
+
+  left: var(--mouse-x);
+  top: var(--mouse-y);
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background: #FF5A1F;
+
+  box-shadow:
+    0 0 8px rgba(255, 90, 31, 0.95),
+    0 0 22px rgba(255, 90, 31, 0.65),
+    0 0 45px rgba(255, 90, 31, 0.28);
+}
+
+.hero-grid::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.13) 1px,
+    transparent 1px
+  );
+
+  background-size: 72px 72px;
+  opacity: 0.3;
+}
+
+.hero__meta,
+.hero__content,
+.hero .scroll-mark {
+  position: relative;
+  z-index: 2;
+}
 /* =========================================================
    MOUSE GLOW
    ========================================================= */
