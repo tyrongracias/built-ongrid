@@ -211,17 +211,25 @@ function HeroGrid() {
     const onMove = (e) => {
       const r = el.getBoundingClientRect();
 
-      target.current.x = e.clientX - r.left;
-      target.current.y = e.clientY - r.top;
-    };
+      const x = e.clientX - r.left;
+      const y = e.clientY - r.top;
 
-    const onLeave = () => {
-      target.current.x = -1000;
-      target.current.y = -1000;
+      const inside =
+        x >= 0 &&
+        x <= r.width &&
+        y >= 0 &&
+        y <= r.height;
+
+      if (inside) {
+        target.current.x = x;
+        target.current.y = y;
+      } else {
+        target.current.x = -1000;
+        target.current.y = -1000;
+      }
     };
 
     window.addEventListener('pointermove', onMove);
-    el.addEventListener('pointerleave', onLeave);
 
     let frame;
 
@@ -232,8 +240,15 @@ function HeroGrid() {
       current.x += (next.x - current.x) * 0.08;
       current.y += (next.y - current.y) * 0.08;
 
-      el.style.setProperty('--mouse-x', `${current.x}px`);
-      el.style.setProperty('--mouse-y', `${current.y}px`);
+      el.style.setProperty(
+        '--mouse-x',
+        `${current.x}px`
+      );
+
+      el.style.setProperty(
+        '--mouse-y',
+        `${current.y}px`
+      );
 
       frame = requestAnimationFrame(draw);
     };
@@ -241,8 +256,10 @@ function HeroGrid() {
     draw();
 
     return () => {
-      window.removeEventListener('pointermove', onMove);
-      el.removeEventListener('pointerleave', onLeave);
+      window.removeEventListener(
+        'pointermove',
+        onMove
+      );
 
       if (frame) {
         cancelAnimationFrame(frame);
