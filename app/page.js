@@ -33,13 +33,6 @@ const services = [
   },
   {
     id: '05',
-    code: 'AI//',
-    title: 'Add intelligence where it matters.',
-    body: 'Business-specific assistants, lead capture and useful AI experiences without adding unnecessary complexity.',
-    tags: 'AI ASSISTANTS / LEADS / KNOWLEDGE / CUSTOMER EXPERIENCE'
-  },
-  {
-    id: '06',
     code: 'LAUNCH//',
     title: 'Connect everything and ship it.',
     body: 'We bring the pieces together, get the business live and leave you with a foundation you can grow.',
@@ -57,16 +50,16 @@ const projects = [
   },
   {
     no: '002',
-    title: 'PROJECT//COMING',
+    title: 'PROJECT//COMING SOON',
     type: 'SPEC BUILD / BRAND / WEB',
-    note: 'A fictional Goa hospitality brand built to demonstrate the ONGRID system.',
+    note: 'This could be your project, connect to get started.',
     accent: 'white'
   },
   {
     no: '003',
-    title: 'PROJECT//COMING',
+    title: 'PROJECT//COMING SOON',
     type: 'SPEC BUILD / BRAND / WEB',
-    note: 'A fictional modern local business built from identity through launch.',
+    note: 'This could be your project, connect to get started.',
     accent: 'white'
   },
 ];
