@@ -379,100 +379,6 @@ button {
   font-size: 17px;
 }
 
-/* =========================================================
-   NETWORK BACKGROUND
-   ========================================================= */
-
-.network {
-  position: absolute;
-
-  inset: 0;
-
-  overflow: hidden;
-
-  opacity: 0.8;
-
-  pointer-events: none;
-
-  background:
-    radial-gradient(
-      circle at var(--px) var(--py),
-      rgba(255, 90, 31, 0.08),
-      transparent 28%
-    );
-}
-
-.network__wash {
-  position: absolute;
-
-  inset: 0;
-
-  background:
-    linear-gradient(
-      90deg,
-      transparent 0%,
-      rgba(255, 90, 31, 0.018) 50%,
-      transparent 100%
-    );
-}
-
-.network svg {
-  position: absolute;
-
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-}
-
-.network line {
-  stroke: rgba(245, 245, 240, 0.12);
-  stroke-width: 0.08;
-}
-
-.node {
-  position: absolute;
-
-  width: 4px;
-  height: 4px;
-
-  border-radius: 50%;
-
-  transform: translate(-50%, -50%);
-
-  background: #777;
-
-  box-shadow:
-    0 0 0 3px rgba(255, 255, 255, 0.03);
-
-  animation: pulse 3s ease-in-out infinite;
-}
-
-.node--signal {
-  background: var(--signal);
-
-  box-shadow:
-    0 0 14px rgba(255, 90, 31, 0.6);
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 0.45;
-
-    transform:
-      translate(-50%, -50%)
-      scale(0.8);
-  }
-
-  50% {
-    opacity: 1;
-
-    transform:
-      translate(-50%, -50%)
-      scale(1.25);
-  }
-}
 
 /* =========================================================
    STANDARD SECTIONS
@@ -1057,12 +963,6 @@ button {
   padding: 110px 4vw;
 }
 
-.start__network {
-  position: absolute;
-
-  inset: 0;
-}
-
 .start__content {
   position: relative;
 
@@ -1594,4 +1494,37 @@ button {
 
   font-size: 14px;
   line-height: 1.5;
+}
+
+/* =========================================================
+   START CTA — CLEAN
+   ========================================================= */
+
+.start {
+  position: relative;
+  min-height: 900px;
+  overflow: hidden;
+}
+
+.start__content {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 100px;
+
+  max-width: 1100px;
+}
+
+.start__content > p {
+  max-width: 350px;
+  margin: 45px 0 30px;
+}
+
+.start__content .button {
+  display: inline-flex;
+  align-items: center;
+}
+
+.start__content .contact {
+  margin-top: 45px;
 }
