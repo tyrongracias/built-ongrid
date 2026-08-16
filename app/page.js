@@ -402,23 +402,23 @@ export default function Home() {
             BRAND / WEB / SEARCH / SOCIAL / AI / LAUNCH
           </p>
 
-          <h1>
-            WE BUILD
-            <br />
-          
-            <span className="hero-muted">
-              YOUR BUSINESS.
-            </span>
-          
-            <br />
-          
-            WE PUT IT
-            <br />
-          
-            <em>
-              ONGRID.
-            </em>
-          </h1>
+            <h1>
+              WE BUILD
+              <br />
+            
+              <span className="hero-muted">
+                YOUR BUSINESS.
+              </span>
+            
+              <br />
+            
+              AND PUT IT
+              <br />
+            
+              <em>
+                ONGRID.
+              </em>
+            </h1>
 
           <div className="hero__bottom">
 
