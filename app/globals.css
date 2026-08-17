@@ -644,6 +644,19 @@ button {
   color: var(--white);
 }
 
+.project {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project--active {
+  cursor: pointer;
+}
+
+.project--disabled {
+  cursor: default;
+}
+
 
 /* =========================================================
    PROJECT IMAGE
