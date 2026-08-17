@@ -1,11 +1,12 @@
 'use client';
 
 import Link from 'next/link';
+import Navbar from '../../components/Navbar';
 
 export default function DivvyUpPage() {
   return (
     <main className="case-study">
-
+ <Navbar />
   {/* =====================================================
           CASE STUDY HEADER
           ===================================================== */}
