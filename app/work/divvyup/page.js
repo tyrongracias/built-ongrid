@@ -47,7 +47,7 @@ export default function DivvyUpPage() {
 
         <div className="case-study__cover">
           <img
-            src="/image/projects/project-001/cover.jpg"
+            src="/image/projects/project-001/cover.png"
             alt="DivvyUp & Grow"
           />
         </div>
@@ -228,11 +228,13 @@ export default function DivvyUpPage() {
 
         </div>
 
-        <div className="case-study__screens">
+         <div className="case-study__screen">
 
-          <div className="case-study__screen">
-            <div className="case-study__screen-placeholder">
-              PROPERTY DISCOVERY
+            <div className="case-study__screen-image">
+              <img
+                src="/image/projects/project-001/discovery.png"
+                alt="DivvyUp property discovery experience"
+              />
             </div>
 
             <h3>PROPERTY DISCOVERY</h3>
@@ -245,10 +247,13 @@ export default function DivvyUpPage() {
           </div>
 
           <div className="case-study__screen">
-            <div className="case-study__screen-placeholder">
-              INVESTMENT VIEW
-            </div>
 
+            <div className="case-study__screen-image">
+              <img
+                src="/image/projects/project-001/investment.png"
+                alt="DivvyUp investment view"
+              />
+            </div>
             <h3>INVESTMENT VIEW</h3>
 
             <p>
@@ -259,10 +264,13 @@ export default function DivvyUpPage() {
           </div>
 
           <div className="case-study__screen">
-            <div className="case-study__screen-placeholder">
-              INVESTOR DASHBOARD
-            </div>
 
+            <div className="case-study__screen-image">
+              <img
+                src="/image/projects/project-001/dashboard.png"
+                alt="DivvyUp investor dashboard"
+              />
+            </div>
             <h3>INVESTOR DASHBOARD</h3>
 
             <p>
