@@ -46,9 +46,10 @@ export default function DivvyUpPage() {
         </p>
 
         <div className="case-study__cover">
-          <div className="case-study__cover-placeholder">
-            DIVVYUP &amp; GROW
-          </div>
+          <img
+            src="/image/projects/project-001/cover.jpg"
+            alt="DivvyUp & Grow"
+          />
         </div>
 
         <div className="case-study__meta">
