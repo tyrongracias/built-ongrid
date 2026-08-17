@@ -794,26 +794,32 @@ button {
   top: 24px;
   left: 24px;
 
-  z-index: 4;
+  z-index: 10;
+
+  display: inline-block;
 
   max-width: 220px;
 
+  padding: 8px 10px;
+
   font-family: var(--body);
   font-size: 9px;
-
   font-weight: 600;
 
   letter-spacing: 0.13em;
-
-  line-height: 1.8;
+  line-height: 1.7;
 
   text-align: left;
 
   color: var(--white);
 
+  background: rgba(15, 15, 15, 0.72);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
   pointer-events: none;
 }
-
 
 /* =========================================================
    PROJECT HOVER
