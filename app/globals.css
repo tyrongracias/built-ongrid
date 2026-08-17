@@ -43,6 +43,36 @@ button {
 }
 
 /* =========================================================
+   DESKTOP SCALE
+   Keep the site visually consistent on large monitors.
+   ========================================================= */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent ultra-wide screens from making the design feel tiny */
+
+@media (min-width: 1600px) {
+
+  .section-light,
+  .section-dark,
+  .work,
+  .services,
+  .process,
+  .about,
+  .start {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+}
+/* =========================================================
    GLOBAL SECTIONS
    ========================================================= */
 
