@@ -762,24 +762,15 @@ button {
 
 .project__visual-word {
   font-family: var(--display);
-
   font-weight: 700;
-
   font-size: clamp(110px, 22vw, 330px);
-
   line-height: 0.7;
-
-  letter-spacing: -0.12em;
-
+  letter-spacing: -0.12em;\
   position: absolute;
-
   left: -0.04em;
   top: 35%;
-
   z-index: 3;
-
   opacity: 0.92;
-
   pointer-events: none;
 }
 
