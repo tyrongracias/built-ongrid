@@ -285,7 +285,7 @@ export default function Home() {
         <div className="hero__content">
 
           <p className="eyebrow">
-            BRAND / WEB / SEARCH / SOCIAL / AI / LAUNCH
+            BRAND / WEB / SEO / SOCIAL / UXUI
           </p>
 
             <h1>
@@ -309,8 +309,7 @@ export default function Home() {
           <div className="hero__bottom">
 
             <p>
-              At 'BUILT// ONGRID', we build the digital presence modern businesses
-              need to get seen, trusted and connected.
+              'BUILT// ONGRID' brings together the digital foundations modern businesses need to be seen, trusted and chosen.
             </p>
 
             <a
