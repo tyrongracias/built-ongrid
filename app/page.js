@@ -428,109 +428,121 @@ export default function Home() {
       </section>
 
 
-      {/* =====================================================
-          WORK
-          ===================================================== */}
+    {/* =====================================================
+    WORK
+    ===================================================== */}
 
-      <section
-        id="work"
-        className="work section-light reveal"
+<section
+  id="work"
+  className="work section-light reveal"
+>
+
+  <div className="section-index">
+    04 / SELECTED BUILDS
+  </div>
+
+  <div className="section-heading">
+
+    <h2>
+      BUILT//
+      <br />
+
+      <span>
+        IN THE REAL WORLD.
+      </span>
+    </h2>
+
+    <p>
+      A growing collection of client work
+      and studio-built experiments.
+    </p>
+
+  </div>
+
+  <div className="projects">
+
+    {projects.map((p, i) => (
+
+      <article
+        className={`project ${
+          p.accent === 'lime'
+            ? 'project--lime'
+            : ''
+        }`}
+        key={p.no}
+        onClick={() => {
+          if (p.no === '001') {
+            window.location.href = '/work/divvyup';
+          }
+        }}
+        style={{
+          cursor: p.no === '001' ? 'pointer' : 'default'
+        }}
       >
 
-        <div className="section-index">
-          04 / SELECTED BUILDS
+        <div className="project__visual">
+
+          {/* DIVVYUP PROJECT IMAGE */}
+
+          {p.no === '001' && (
+            <img
+              className="project__visual-image"
+              src="/image/main-page/DivvyUp.png"
+              alt=""
+            />
+          )}
+
+          <div className="project__visual-grid" />
+
+          <div className="project__visual-word">
+            {i === 0 ? 'D/G' : 'BUILD'}
+          </div>
+
+          <div className="project__visual-meta">
+            PROJECT//{p.no}
+            <br />
+            {p.type}
+          </div>
+
         </div>
 
-        <div className="section-heading">
+        <div className="project__info">
 
-          <h2>
-            BUILT//
-            <br />
+          <div>
 
             <span>
-              IN THE REAL WORLD.
+              PROJECT//{p.no}
             </span>
-          </h2>
 
-          <p>
-            A growing collection of client work
-            and studio-built experiments.
-          </p>
+            <h3>
+              {p.title}
+            </h3>
 
-        </div>
+            <p>
+              {p.note}
+            </p>
 
-        <div className="projects">
+          </div>
 
-          {projects.map((p, i) => (
-
-            <article
-                className={`project ${
-                  p.accent === 'lime'
-                    ? 'project--lime'
-                    : ''
-                }`}
-                key={p.no}
-                onClick={() => {
-                  if (p.no === '001') {
-                    window.location.href = '/work/divvyup';
-                  }
-                }}
-                style={{
-                  cursor: p.no === '001' ? 'pointer' : 'default'
-                }}
-              >
-
-              <div className="project__visual">
-
-                <div className="project__visual-grid" />
-
-                <div className="project__visual-word">
-                  {i === 0 ? 'D/G' : 'BUILD'}
-                </div>
-
-                <div className="project__visual-meta">
-                  PROJECT//{p.no}
-                  <br />
-                  {p.type}
-                </div>
-
-              </div>
-
-              <div className="project__info">
-
-                <div>
-
-                  <span>
-                    PROJECT//{p.no}
-                  </span>
-
-                  <h3>
-                    {p.title}
-                  </h3>
-
-                  <p>
-                    {p.note}
-                  </p>
-
-                </div>
-
-                <a
-                  href={p.no === '001' ? '/work/divvyup' : undefined}
-                  className="project__link"
-                >
-                  VIEW PROJECT <Arrow />
-                </a>
-
-              </div>
-
-            </article>
-
-          ))}
+          <a
+            href={p.no === '001' ? '/work/divvyup' : undefined}
+            className="project__link"
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+          >
+            VIEW PROJECT <Arrow />
+          </a>
 
         </div>
-      </section>
 
+      </article>
 
+    ))}
+
+  </div>
+
+</section>
       {/* =====================================================
           PROCESS
           ===================================================== */}
