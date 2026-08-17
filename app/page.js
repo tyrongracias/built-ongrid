@@ -428,7 +428,7 @@ export default function Home() {
       </section>
 
 
-    {/* =====================================================
+   {/* =====================================================
     WORK
     ===================================================== */}
 
@@ -461,84 +461,95 @@ export default function Home() {
 
   <div className="projects">
 
-    {projects.map((p, i) => (
+    {projects.map((p) => {
 
-      <article
-        className={`project ${
-          p.accent === 'lime'
-            ? 'project--lime'
-            : ''
-        }`}
-        key={p.no}
-        onClick={() => {
-          if (p.no === '001') {
-            window.location.href = '/work/divvyup';
+      const isActive = Boolean(p.href);
+
+      const ProjectCard = isActive ? 'a' : 'article';
+
+      const projectProps = isActive
+        ? {
+            href: p.href
           }
-        }}
-        style={{
-          cursor: p.no === '001' ? 'pointer' : 'default'
-        }}
-      >
+        : {};
 
-        <div className="project__visual">
+      return (
+        <ProjectCard
+          key={p.no}
+          className={`project ${
+            p.accent === 'lime'
+              ? 'project--lime'
+              : ''
+          } ${
+            isActive
+              ? 'project--active'
+              : 'project--disabled'
+          }`}
+          {...projectProps}
+        >
 
-          {/* DIVVYUP PROJECT IMAGE */}
+          {/* =================================================
+              PROJECT VISUAL
+              ================================================= */}
 
-          {p.no === '001' && (
-            <img
-              className="project__visual-image"
-              src="/image/main-page/DivvyUp.png"
-              alt=""
-            />
-          )}
+          <div className="project__visual">
 
-          <div className="project__visual-grid" />
+            {p.image && (
+              <img
+                className="project__visual-image"
+                src={p.image}
+                alt=""
+              />
+            )}
 
-          <div className="project__visual-word">
-            {i === 0 ? 'D/G' : 'BUILD'}
-          </div>
+            <div className="project__visual-grid" />
 
-          <div className="project__visual-meta">
-            PROJECT//{p.no}
-            <br />
-            {p.type}
-          </div>
+            <div className="project__visual-word">
+              {p.visual || 'BUILD'}
+            </div>
 
-        </div>
-
-        <div className="project__info">
-
-          <div>
-
-            <span>
+            <div className="project__visual-meta">
               PROJECT//{p.no}
-            </span>
-
-            <h3>
-              {p.title}
-            </h3>
-
-            <p>
-              {p.note}
-            </p>
+              <br />
+              {p.type}
+            </div>
 
           </div>
 
-          <a
-            href={p.no === '001' ? '/work/divvyup' : undefined}
-            className="project__link"
-            onClick={(e) => {
-              e.stopPropagation();
-            }}
-          >
-            VIEW PROJECT <Arrow />
-          </a>
 
-        </div>
+          {/* =================================================
+              PROJECT INFO
+              ================================================= */}
 
-      </article>
+          <div className="project__info">
 
-    ))}
+            <div>
+
+              <span>
+                PROJECT//{p.no}
+              </span>
+
+              <h3>
+                {p.title}
+              </h3>
+
+              <p>
+                {p.note}
+              </p>
+
+            </div>
+
+            {isActive && (
+              <span className="project__link">
+                VIEW PROJECT <Arrow />
+              </span>
+            )}
+
+          </div>
+
+        </ProjectCard>
+      );
+    })}
 
   </div>
 
