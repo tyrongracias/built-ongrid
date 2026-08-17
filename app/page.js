@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-
+import { useEffect, useRef } from 'react';
+import Navbar from './components/Navbar';
 const services = [
   {
     id: '01',
