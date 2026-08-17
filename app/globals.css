@@ -1569,6 +1569,7 @@ button {
   object-fit: cover;
 }
 
+
 /* =========================================================
    PROJECT META
    ========================================================= */
@@ -1755,23 +1756,19 @@ button {
   grid-column: span 2;
 }
 
-.case-study__screen-placeholder {
-  aspect-ratio: 16 / 10;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+.case-study__screen-image {
+  width: 100%;
+  overflow: hidden;
   margin-bottom: 1.5rem;
 
   background: #f1f1f1;
   border: 1px solid #e5e5e5;
+}
 
-  font-family: var(--display);
-  font-size: clamp(1.3rem, 3vw, 3rem);
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  color: #111111;
+.case-study__screen-image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .case-study__screen h3 {
