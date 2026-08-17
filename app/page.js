@@ -571,9 +571,12 @@ export default function Home() {
 
                 </div>
 
-                <span className="project__link">
+                <a
+                  href={p.no === '001' ? '/work/divvyup' : undefined}
+                  className="project__link"
+                >
                   VIEW PROJECT <Arrow />
-                </span>
+                </a>
 
               </div>
 
