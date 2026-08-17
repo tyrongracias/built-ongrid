@@ -44,25 +44,36 @@ const services = [
 const projects = [
   {
     no: '001',
-    title: 'DIVVYUP & GROW',
+    title: 'DIVVYUP & GROW.',
     type: 'PROPTECH / PRODUCT / WEB',
-    note: 'A premium digital investment experience for fractional property ownership.',
-    accent: 'signal'
+    note: 'A digital investment experience designed to make fractional property ownership easier to understand, explore and invest in.',
+    accent: 'default',
+    visual: 'D/G',
+    image: '/image/main-page/DivvyUp.png',
+    href: '/work/divvyup'
   },
+
   {
     no: '002',
-    title: 'PROJECT//COMING SOON',
-    type: 'SPEC BUILD / BRAND / WEB',
-    note: 'This could be your project, connect to get started.',
-    accent: 'white'
+    title: 'PROJECT TWO.',
+    type: 'BRAND / WEB',
+    note: 'Project description goes here.',
+    accent: 'default',
+    visual: 'BUILD',
+    image: '',
+    href: ''
   },
+
   {
     no: '003',
-    title: 'PROJECT//COMING SOON',
-    type: 'SPEC BUILD / BRAND / WEB',
-    note: 'This could be your project, connect to get started.',
-    accent: 'white'
-  },
+    title: 'PROJECT THREE.',
+    type: 'PRODUCT / WEB',
+    note: 'Project description goes here.',
+    accent: 'default',
+    visual: 'BUILD',
+    image: '',
+    href: ''
+  }
 ];
 
 /* =========================================================
