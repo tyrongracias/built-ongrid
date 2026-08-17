@@ -6,9 +6,9 @@ export default function DivvyUpPage() {
   return (
     <main className="case-study">
 
-      {/* =====================================================
+      /* =====================================================
           CASE STUDY HEADER
-          ===================================================== */}
+          ===================================================== */
 
       <header className="case-study__nav">
 
@@ -23,9 +23,9 @@ export default function DivvyUpPage() {
       </header>
 
 
-      {/* =====================================================
+      /* =====================================================
           HERO
-          ===================================================== */}
+          ===================================================== */
 
       <section className="case-study__hero">
 
@@ -79,9 +79,9 @@ export default function DivvyUpPage() {
       </section>
 
 
-      {/* =====================================================
+      /* =====================================================
           01 / THE CHALLENGE
-          ===================================================== */}
+          ===================================================== */
 
       <section className="case-study__section case-study__section--dark">
 
@@ -123,9 +123,9 @@ export default function DivvyUpPage() {
       </section>
 
 
-      {/* =====================================================
+      /* =====================================================
           02 / THE APPROACH
-          ===================================================== */}
+          ===================================================== */
 
       <section className="case-study__section case-study__section--light">
 
@@ -195,98 +195,106 @@ export default function DivvyUpPage() {
       </section>
 
 
-      {/* =====================================================
-          03 / THE PRODUCT
-          ===================================================== */}
+      /* =====================================================
+      03 / THE PRODUCT
+      ===================================================== */
 
-      <section className="case-study__section case-study__section--dark">
+<section className="case-study__section case-study__section--dark">
 
-        <div className="case-study__index">
-          03 / THE PRODUCT
-        </div>
+  <div className="case-study__index">
+    03 / THE PRODUCT
+  </div>
 
-        <div className="case-study__split">
+  <div className="case-study__split">
 
-          <h2>
-            ONE PLATFORM.
-            <br />
-            EVERYTHING
-            <br />
-            IN PLACE.
-          </h2>
+    <h2>
+      ONE PLATFORM.
+      <br />
+      EVERYTHING
+      <br />
+      IN PLACE.
+    </h2>
 
-          <div className="case-study__copy">
+    <div className="case-study__copy">
 
-            <p>
-              The product was designed to bring the entire
-              investment journey into one place — from
-              discovering a property to understanding and
-              managing ownership.
-            </p>
+      <p>
+        The product was designed to bring the entire
+        investment journey into one place — from
+        discovering a property to understanding and
+        managing ownership.
+      </p>
 
-          </div>
+    </div>
 
-        </div>
+  </div>
 
-         <div className="case-study__screen">
+  <div className="case-study__screens">
 
-            <div className="case-study__screen-image">
-              <img
-                src="/image/projects/project-001/discovery.png"
-                alt="DivvyUp property discovery experience"
-              />
-            </div>
+    <div className="case-study__screen">
 
-            <h3>PROPERTY DISCOVERY</h3>
+      <div className="case-study__screen-image">
+        <img
+          src="/image/projects/project-001/discovery.png"
+          alt="DivvyUp property discovery experience"
+        />
+      </div>
 
-            <p>
-              A structured property experience that puts
-              the asset, opportunity and key investment
-              information first.
-            </p>
-          </div>
+      <h3>PROPERTY DISCOVERY</h3>
 
-          <div className="case-study__screen">
+      <p>
+        A structured property experience that puts
+        the asset, opportunity and key investment
+        information first.
+      </p>
 
-            <div className="case-study__screen-image">
-              <img
-                src="/image/projects/project-001/investment.png"
-                alt="DivvyUp investment view"
-              />
-            </div>
-            <h3>INVESTMENT VIEW</h3>
-
-            <p>
-              Financial information presented in a way that
-              helps investors understand the opportunity
-              without unnecessary complexity.
-            </p>
-          </div>
-
-          <div className="case-study__screen">
-
-            <div className="case-study__screen-image">
-              <img
-                src="/image/projects/project-001/dashboard.png"
-                alt="DivvyUp investor dashboard"
-              />
-            </div>
-            <h3>INVESTOR DASHBOARD</h3>
-
-            <p>
-              A central view of holdings, performance,
-              reports and investment activity.
-            </p>
-          </div>
-
-        </div>
-
-      </section>
+    </div>
 
 
-      {/* =====================================================
+    <div className="case-study__screen">
+
+      <div className="case-study__screen-image">
+        <img
+          src="/image/projects/project-001/investment.png"
+          alt="DivvyUp investment view"
+        />
+      </div>
+
+      <h3>INVESTMENT VIEW</h3>
+
+      <p>
+        Financial information presented in a way that
+        helps investors understand the opportunity
+        without unnecessary complexity.
+      </p>
+
+    </div>
+
+
+    <div className="case-study__screen">
+
+      <div className="case-study__screen-image">
+        <img
+          src="/image/projects/project-001/dashboard.png"
+          alt="DivvyUp investor dashboard"
+        />
+      </div>
+
+      <h3>INVESTOR DASHBOARD</h3>
+
+      <p>
+        A central view of holdings, performance,
+        reports and investment activity.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+      /* =====================================================
           04 / THE SYSTEM
-          ===================================================== */}
+          ===================================================== */
 
       <section className="case-study__section case-study__section--light">
 
@@ -328,9 +336,9 @@ export default function DivvyUpPage() {
       </section>
 
 
-      {/* =====================================================
+      /* =====================================================
           05 / THE EXPERIENCE
-          ===================================================== */}
+          ===================================================== */
 
       <section className="case-study__section case-study__section--dark">
 
@@ -378,9 +386,9 @@ export default function DivvyUpPage() {
       </section>
 
 
-      {/* =====================================================
+      /* =====================================================
           06 / THE BUILD
-          ===================================================== */}
+          ===================================================== */
 
       <section className="case-study__section case-study__section--light">
 
@@ -414,9 +422,9 @@ export default function DivvyUpPage() {
       </section>
 
 
-      {/* =====================================================
+      /* =====================================================
           07 / THE OUTCOME
-          ===================================================== */}
+          ===================================================== */
 
       <section className="case-study__section case-study__section--dark">
 
@@ -458,9 +466,9 @@ export default function DivvyUpPage() {
       </section>
 
 
-      {/* =====================================================
+      /* =====================================================
           NEXT PROJECT
-          ===================================================== */}
+          ===================================================== */
 
       <section className="case-study__next">
 
@@ -481,9 +489,9 @@ export default function DivvyUpPage() {
       </section>
 
 
-      {/* =====================================================
+      /* =====================================================
           FOOTER
-          ===================================================== */}
+          ===================================================== */
 
       <footer className="case-study__footer">
 
