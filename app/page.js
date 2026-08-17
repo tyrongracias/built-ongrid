@@ -464,13 +464,21 @@ export default function Home() {
           {projects.map((p, i) => (
 
             <article
-              className={`project ${
-                p.accent === 'lime'
-                  ? 'project--lime'
-                  : ''
-              }`}
-              key={p.no}
-            >
+                className={`project ${
+                  p.accent === 'lime'
+                    ? 'project--lime'
+                    : ''
+                }`}
+                key={p.no}
+                onClick={() => {
+                  if (p.no === '001') {
+                    window.location.href = '/work/divvyup';
+                  }
+                }}
+                style={{
+                  cursor: p.no === '001' ? 'pointer' : 'default'
+                }}
+              >
 
               <div className="project__visual">
 
