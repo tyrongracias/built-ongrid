@@ -1450,15 +1450,17 @@ button {
 /* =========================================================
    DIVVYUP & GROW — CASE STUDY
    Page-specific styles
-   Does not alter existing homepage components.
+   White editorial case-study layout.
    ========================================================= */
 
 .case-study {
   min-height: 100vh;
-  background: var(--light);
-  color: var(--ink);
+  width: 100%;
+  background: #ffffff;
+  color: #111111;
   overflow: hidden;
 }
+
 
 /* =========================================================
    NAV
@@ -1468,8 +1470,11 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 28px 5vw;
-  border-bottom: 1px solid rgba(8, 8, 8, 0.12);
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .case-study__back,
@@ -1482,17 +1487,17 @@ button {
 }
 
 .case-study__back {
-  color: var(--ink);
+  color: #111111;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
 
 .case-study__back:hover {
-  opacity: 0.5;
+  opacity: 0.55;
 }
 
 .case-study__index {
-  color: var(--muted);
+  color: #666666;
 }
 
 
@@ -1502,6 +1507,7 @@ button {
 
 .case-study__hero {
   padding: 9vw 5vw 7vw;
+  background: #ffffff;
 }
 
 .case-study__eyebrow {
@@ -1509,9 +1515,10 @@ button {
 
   font-family: var(--body);
   font-size: 0.68rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
-  color: var(--orange);
+  text-transform: uppercase;
+  color: #666666;
 }
 
 .case-study__hero h1 {
@@ -1520,13 +1527,14 @@ button {
   font-family: var(--display);
   font-size: clamp(4.5rem, 12vw, 11rem);
   line-height: 0.82;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.07em;
   text-transform: uppercase;
+  color: #111111;
 }
 
 .case-study__hero h1 span {
-  color: var(--orange);
+  color: #111111;
 }
 
 .case-study__intro {
@@ -1536,7 +1544,8 @@ button {
   font-family: var(--body);
   font-size: clamp(1rem, 1.4vw, 1.25rem);
   line-height: 1.55;
-  color: var(--muted);
+  font-weight: 500;
+  color: #333333;
 }
 
 
@@ -1548,7 +1557,9 @@ button {
   width: 100%;
   aspect-ratio: 16 / 8.5;
   overflow: hidden;
-  background: #111;
+
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
 }
 
 .case-study__cover-placeholder {
@@ -1561,17 +1572,11 @@ button {
 
   font-family: var(--display);
   font-size: clamp(2rem, 5vw, 5rem);
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.05em;
-  color: #f5f5f0;
+  color: #111111;
 
-  background:
-    radial-gradient(
-      circle at 70% 30%,
-      rgba(255, 90, 31, 0.2),
-      transparent 30%
-    ),
-    #111;
+  background: #f1f1f1;
 }
 
 
@@ -1585,7 +1590,9 @@ button {
   gap: 2rem;
 
   padding: 2rem 0;
-  border-bottom: 1px solid rgba(8, 8, 8, 0.15);
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .case-study__meta div {
@@ -1597,16 +1604,18 @@ button {
 .case-study__meta span {
   font-family: var(--body);
   font-size: 0.62rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
-  color: var(--muted);
+  text-transform: uppercase;
+  color: #666666;
 }
 
 .case-study__meta strong {
   font-family: var(--body);
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.02em;
+  color: #111111;
 }
 
 
@@ -1616,21 +1625,27 @@ button {
 
 .case-study__section {
   padding: 9vw 5vw;
+
+  background: #ffffff;
+  color: #111111;
 }
 
-.case-study__section--dark {
-  background: var(--dark);
-  color: var(--light);
-}
-
+.case-study__section--dark,
 .case-study__section--light {
-  background: var(--light);
-  color: var(--ink);
+  background: #ffffff;
+  color: #111111;
 }
 
 .case-study__section > .case-study__index {
   margin-bottom: 5vw;
+
+  color: #666666;
 }
+
+
+/* =========================================================
+   SECTION CONTENT
+   ========================================================= */
 
 .case-study__split {
   display: grid;
@@ -1645,9 +1660,10 @@ button {
   font-family: var(--display);
   font-size: clamp(3rem, 7vw, 7rem);
   line-height: 0.88;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.065em;
   text-transform: uppercase;
+  color: #111111;
 }
 
 .case-study__copy {
@@ -1661,8 +1677,9 @@ button {
   font-family: var(--body);
   font-size: 1rem;
   line-height: 1.7;
-  color: inherit;
-  opacity: 0.72;
+  font-weight: 500;
+  color: #333333;
+  opacity: 1;
 }
 
 .case-study__copy p strong {
@@ -1671,9 +1688,9 @@ button {
   font-family: var(--display);
   font-size: 1.35rem;
   line-height: 1.25;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.025em;
-  color: inherit;
+  color: #111111;
   opacity: 1;
 }
 
@@ -1689,14 +1706,14 @@ button {
 
   margin-top: 8vw;
 
-  background: rgba(8, 8, 8, 0.15);
+  background: #dddddd;
 }
 
 .case-study__cards article {
   min-height: 280px;
   padding: 2rem;
 
-  background: var(--light);
+  background: #ffffff;
 }
 
 .case-study__cards span {
@@ -1705,8 +1722,9 @@ button {
 
   font-family: var(--body);
   font-size: 0.65rem;
-  font-weight: 600;
-  color: var(--orange);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #666666;
 }
 
 .case-study__cards h3,
@@ -1717,6 +1735,7 @@ button {
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: -0.03em;
+  color: #111111;
 }
 
 .case-study__cards p,
@@ -1726,7 +1745,8 @@ button {
   font-family: var(--body);
   font-size: 0.85rem;
   line-height: 1.6;
-  color: var(--muted);
+  font-weight: 500;
+  color: #444444;
 }
 
 
@@ -1755,22 +1775,23 @@ button {
 
   margin-bottom: 1.5rem;
 
-  background: #151515;
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
 
   font-family: var(--display);
   font-size: clamp(1.3rem, 3vw, 3rem);
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.04em;
-  color: #f5f5f0;
+  color: #111111;
 }
 
 .case-study__screen h3 {
-  color: var(--light);
+  color: #111111;
 }
 
 .case-study__screen p {
   max-width: 500px;
-  color: rgba(245, 245, 240, 0.55);
+  color: #444444;
 }
 
 
@@ -1784,8 +1805,9 @@ button {
 
   margin-top: 8vw;
 
-  border-top: 1px solid rgba(8, 8, 8, 0.18);
-  border-bottom: 1px solid rgba(8, 8, 8, 0.18);
+  background: #ffffff;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .case-study__system span {
@@ -1793,11 +1815,12 @@ button {
 
   font-family: var(--body);
   font-size: 0.65rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-align: center;
+  color: #111111;
 
-  border-right: 1px solid rgba(8, 8, 8, 0.18);
+  border-right: 1px solid #e5e5e5;
 }
 
 .case-study__system span:last-child {
@@ -1818,21 +1841,22 @@ button {
   margin-top: 8vw;
   padding: 2rem 0;
 
-  border-top: 1px solid rgba(245, 245, 240, 0.2);
-  border-bottom: 1px solid rgba(245, 245, 240, 0.2);
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .case-study__flow span {
   font-family: var(--body);
   font-size: 0.68rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.08em;
+  color: #111111;
 }
 
 .case-study__flow b {
   font-family: var(--body);
-  font-weight: 400;
-  color: var(--orange);
+  font-weight: 500;
+  color: #666666;
 }
 
 
@@ -1844,7 +1868,7 @@ button {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  border-top: 1px solid rgba(8, 8, 8, 0.15);
+  border-top: 1px solid #e5e5e5;
 }
 
 .case-study__capabilities span {
@@ -1852,10 +1876,11 @@ button {
 
   font-family: var(--body);
   font-size: 0.72rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.04em;
+  color: #111111;
 
-  border-bottom: 1px solid rgba(8, 8, 8, 0.15);
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .case-study__capabilities span:nth-child(odd) {
@@ -1870,13 +1895,15 @@ button {
 .case-study__next {
   padding: 12vw 5vw;
 
-  background: var(--orange);
-  color: var(--dark);
+  background: #ffffff;
+  color: #111111;
+
+  border-top: 1px solid #e5e5e5;
 }
 
 .case-study__next .case-study__index {
   margin-bottom: 5rem;
-  color: rgba(8, 8, 8, 0.55);
+  color: #666666;
 }
 
 .case-study__next h2 {
@@ -1885,9 +1912,10 @@ button {
   font-family: var(--display);
   font-size: clamp(3.5rem, 9vw, 9rem);
   line-height: 0.85;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.07em;
   text-transform: uppercase;
+  color: #111111;
 }
 
 .case-study__next h2 em {
@@ -1905,7 +1933,7 @@ button {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-decoration: none;
-  color: var(--dark);
+  color: #111111;
 }
 
 .case-study__cta span {
@@ -1924,27 +1952,31 @@ button {
 
   padding: 3rem 5vw;
 
-  background: var(--dark);
-  color: var(--light);
+  background: #ffffff;
+  color: #111111;
+
+  border-top: 1px solid #e5e5e5;
 }
 
 .case-study__footer-logo {
-  font-family: var(--logo);
+  font-family: var(--display);
   font-size: 1.5rem;
   line-height: 0.9;
+  font-weight: 700;
   text-decoration: none;
-  color: var(--light);
+  color: #111111;
 }
 
 .case-study__footer-logo span {
-  color: var(--orange);
+  color: #111111;
 }
 
 .case-study__footer > span {
   font-family: var(--body);
   font-size: 0.62rem;
+  font-weight: 500;
   letter-spacing: 0.08em;
-  color: var(--muted);
+  color: #666666;
 }
 
 
@@ -1990,6 +2022,7 @@ button {
   }
 }
 
+
 @media (max-width: 600px) {
 
   .case-study__nav {
@@ -2032,7 +2065,7 @@ button {
 
   .case-study__system span {
     border-right: none;
-    border-bottom: 1px solid rgba(8, 8, 8, 0.18);
+    border-bottom: 1px solid #e5e5e5;
   }
 
   .case-study__system span:last-child {
