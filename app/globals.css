@@ -87,6 +87,25 @@ button {
   background: rgba(8, 8, 8, 0.76);
 }
 
+
+/* =========================================================
+   SHARED NAVBAR — CASE STUDY
+   Keep the exact main-site translucent treatment
+   ========================================================= */
+
+.case-study .nav {
+  color: #ffffff;
+}
+
+.case-study .nav .brand,
+.case-study .nav .brand__line,
+.case-study .nav .brand__slashes,
+.case-study .nav .menu-btn,
+.case-study .nav .navlinks a,
+.case-study .nav .nav-cta {
+  color: #ffffff;
+}
+
 /* =========================================================
    BUILT ONGRID LOGO
    ========================================================= */
