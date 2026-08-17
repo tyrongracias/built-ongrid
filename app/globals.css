@@ -613,7 +613,6 @@ button {
 
 
 
-
 /* =========================================================
    PROJECTS
    ========================================================= */
@@ -626,6 +625,11 @@ button {
   gap: 80px;
 }
 
+
+/* =========================================================
+   PROJECT VISUAL
+   ========================================================= */
+
 .project__visual {
   height: 550px;
 
@@ -635,19 +639,71 @@ button {
 
   overflow: hidden;
 
+  isolation: isolate;
+
   color: var(--white);
 }
 
-.project--signal .project__visual {
-  background: var(--signal);
 
-  color: var(--black);
+/* =========================================================
+   PROJECT IMAGE
+   ========================================================= */
+
+.project__visual-image {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  filter: grayscale(1) contrast(1.05);
+
+  z-index: 0;
+
+  transition:
+    transform 0.6s ease,
+    filter 0.45s ease;
 }
+
+
+/* =========================================================
+   PROJECT ORANGE HOVER
+   ========================================================= */
+
+.project__visual::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: #ff5a00;
+
+  opacity: 0;
+
+  mix-blend-mode: color;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  transition: opacity 0.45s ease;
+}
+
+
+/* =========================================================
+   PROJECT GRID
+   ========================================================= */
 
 .project__visual-grid {
   position: absolute;
 
   inset: 0;
+
+  z-index: 2;
 
   background-image:
     linear-gradient(
@@ -663,6 +719,14 @@ button {
   background-size:
     9% 100%,
     9% 100%;
+
+  pointer-events: none;
+}
+
+.project--signal .project__visual {
+  background: var(--signal);
+
+  color: var(--black);
 }
 
 .project--signal .project__visual-grid {
@@ -677,6 +741,11 @@ button {
       transparent 1px
     );
 }
+
+
+/* =========================================================
+   PROJECT WORD
+   ========================================================= */
 
 .project__visual-word {
   font-family: var(--display);
@@ -694,8 +763,17 @@ button {
   left: -0.04em;
   top: 35%;
 
+  z-index: 3;
+
   opacity: 0.92;
+
+  pointer-events: none;
 }
+
+
+/* =========================================================
+   PROJECT META
+   ========================================================= */
 
 .project__visual-meta {
   position: absolute;
@@ -703,12 +781,34 @@ button {
   top: 22px;
   left: 22px;
 
+  z-index: 4;
+
   font-size: 9px;
 
   letter-spacing: 0.13em;
 
   line-height: 1.8;
+
+  pointer-events: none;
 }
+
+
+/* =========================================================
+   PROJECT HOVER
+   ========================================================= */
+
+.project:hover .project__visual-image {
+  transform: scale(1.03);
+}
+
+.project:hover .project__visual::after {
+  opacity: 0.9;
+}
+
+
+/* =========================================================
+   PROJECT INFO
+   ========================================================= */
 
 .project__info {
   display: flex;
@@ -764,7 +864,6 @@ button {
 .project__link:hover {
   color: #555;
 }
-
 /* =========================================================
    PROCESS
    ========================================================= */
